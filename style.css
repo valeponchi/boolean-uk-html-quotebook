@@ -7,9 +7,9 @@
 
 body {
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 1fr 50px;
   grid-gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 header,
@@ -22,7 +22,6 @@ main,
 
                   /* HEADER START */
 header {
-  border: 1px solid black;
   border-radius: 10px;
   align-items: center;
   background-color: #950C0C;
@@ -41,7 +40,7 @@ header h1 {
 main {
   grid-gap: 10px;
   grid-template:
-  ". quotes ." 50px/
+  ". quotes ." 1fr/
   auto 55ch auto;
   }
 
@@ -51,17 +50,22 @@ main {
 
 
 
-/* quotes boxes!!!! */
+/* all quotes boxes!!!! */
 .quotes {
   display: grid;
   grid-gap: 10px;
   margin-top: 30px;
 }
 
+figcaption {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 
 /* box-title */
 h2 {
-  margin: 10px 10px;
+  margin: 30px 10px;
   font-weight: bold;
   font-style: italic;
   font-size: 2rem;
@@ -71,7 +75,6 @@ h2 {
 .text {
   display: grid;
   grid-gap: 10px;
-  border: 1px solid red;
   border-radius: 10px;
 
   place-items: center;
@@ -80,17 +83,43 @@ h2 {
 
   text-align: center;
   padding: 20px;
+
+  box-shadow: -2px 5px 8px 3px rgba(41, 10, 10, 0.329);
 }
+
 
 .inspo-box .text {
   background-color: rgb(241, 196, 158);
+}
+
+.inspo-box p:nth-child(even) {
+  background-color: rgb(252, 179, 120);
 }
 
 .developers .text {
   background-color: rgb(235, 197, 223);
 }
 
+.developers p:nth-child(odd) {
+  background-color: rgb(243, 174, 221);
+}
+
 .art .text {
   background-color: rgb(250, 191, 204);
 }
+
+.art p:nth-child(odd) {
+  background-color: rgb(250, 167, 185);
+}
+
                         /* MAIN ENDS */
+
+
+                        /* footer start */
+footer {
+  display: grid;
+  place-items: center;
+  background-color: #950C0C;
+  color: #fff;
+  border-radius: 10px;
+}
