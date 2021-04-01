@@ -100,7 +100,7 @@ h2 {
   background-color: rgb(235, 197, 223);
 }
 
-.developers p:nth-child(odd) {
+.developers p:nth-child(even) {
   background-color: rgb(243, 174, 221);
 }
 
@@ -108,8 +108,8 @@ h2 {
   background-color: rgb(250, 191, 204);
 }
 
-.art p:nth-child(odd) {
-  background-color: rgb(250, 167, 185);
+.art p:nth-child(even) {
+  background-color: rgb(252, 162, 182);
 }
 
                         /* MAIN ENDS */
