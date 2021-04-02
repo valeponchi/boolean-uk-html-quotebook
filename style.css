@@ -72,7 +72,7 @@ h2 {
 }
 
 /* quotes-text */
-.text {
+.quotes {
   display: grid;
   grid-gap: 10px;
   border-radius: 10px;
@@ -80,23 +80,22 @@ h2 {
   place-items: center;
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.3rem;
-
+  
   text-align: center;
   padding: 20px;
-
+  
   box-shadow: -2px 5px 8px 3px rgba(41, 10, 10, 0.329);
 }
 
-
-.inspo-box .text {
-  background-color: rgb(241, 196, 158);
+.inspo-box {
+background-color: rgb(241, 196, 158);
 }
 
 .inspo-box p:nth-child(even) {
   background-color: rgb(252, 179, 120);
 }
 
-.developers .text {
+.developers {
   background-color: rgb(235, 197, 223);
 }
 
@@ -104,7 +103,7 @@ h2 {
   background-color: rgb(243, 174, 221);
 }
 
-.art .text {
+.art {
   background-color: rgb(250, 191, 204);
 }
 
